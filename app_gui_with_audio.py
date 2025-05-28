@@ -10,8 +10,8 @@ from langchain.memory import ConversationBufferMemory
 # 导入 tools 模块
 try:
     from tools import calculator, write_to_file, read_from_file, get_current_datetime, add_calendar_event, get_calendar_events, knowledge_base_search, search_tool
-except ImportError:
-    messagebox.showerror("错误", "无法找到 'tools.py' 文件或其中的工具。请确保文件存在且工具已定义。")
+except ImportError as e:
+    messagebox.showerror("错误", e)
     exit()
 # 导入 ASR 控制器
 from audio_handler import XunfeiASRController

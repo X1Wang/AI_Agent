@@ -1,0 +1,8 @@
+langchain
+langchain_community
+websocket-client
+pyaudio
+zhipuai
+faiss-cpu
+duckduckgo-search
+openai

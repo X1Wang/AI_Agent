@@ -2,7 +2,11 @@
 
 终端目录切换到代码所在目录
 
-安装必要的环境依赖库，然后执行：
+安装python环境和必要的依赖库:
+conda create --name agent python=3.10
+pip install -r requirements.txt
+
+然后执行：
 
 python app_gui_with_audio.py
 
